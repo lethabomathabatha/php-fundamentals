@@ -33,12 +33,50 @@
 
 
     // Exercise 4: create an array called 'countries' that dispalys 5 countries and their capital names.
-    $countries = array("Netherlands" => "Amsterdam" , "Morocco" => "Rabat", "Panama" => "Panama City", "Thailand" => "Bangkok", "Canada" => "Ottawa");
+    $countries = array(
+        "Netherlands" => "Amsterdam", 
+        "Morocco" => "Rabat", 
+        "Panama" => "Panama City", 
+        "Thailand" => "Bangkok", 
+        "Canada" => "Ottawa"
+    );
 
     foreach($countries as $key => $value) {
         echo "<br> The capital of " . $key . " is " . $value . ".";
 
     }
+
+
+    // Exercise 5: create an integer 'cmToInch' that converts a number of centimeters ('cm') to inches ('inch'). Tip: 1cm = 0.39inch
+    $cm = 157;
+    $inch = 0.39;
+    $cmToInch = $cm * $inch;
+
+    echo "<br> My height is " . $cm ."cm in centimeters and " . $cmToInch . "inch in inches.";
+
+
+    // Exercises 6: create an array called 'expenses' with your biggest expenses of the month. Loop through the array and add the expenses in an integer 'totalAmount'. 
+    // Finally, display the total expenses that you had and the amount of values 'amountOfExpenses' you had stored inside your array
+    $expenses = array(600, 150, 50, 35);
+    $totalAmount = 0;
+
+    foreach($expenses as $value) {
+        $totalAmount += $value;
+        // $totalAmount = $totalAmount + $value;
+    }
+
+    $amountOfExpenses = count($expenses);
+    echo "<br> Total biggest expenses: " . $amountOfExpenses . " items that amount to: R " . $totalAmount;
+
+
+    /*  Exercise 7: create an array called 'weather' of weather conditions with the following values: rain, sunshine, clouds, hail, sleet, snow, wind.
+        Using the array variable for all the weather conditins, echo the following statement to the browser:
+        "We've seen all kinds of weather this month. At the beginning of the month, we had snow and wind. Then came sunshine with a few clouds and some rain. 
+        At least we didn't get any hail or sleet."
+    */
+    $weather = array("rain", "sunshine", "clouds", "hail", "sleet", "snow", "wind");
+
+    echo "<br> We've seen all kinds of weather this month. At the beginning of the month, we had " . $weather[5] . " and " . $weather[6] . ". Then came ". $weather[1] . " with a few " . $weather[2] . " and some " . $weather[0] . ". At least we didn't get any " . $weather[3] . " or " . $weather[4] .  "." 
 
     ?>
     <!-- End PHP code  -->
