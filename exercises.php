@@ -150,15 +150,49 @@
             - The machine is older than 7 years
             - The machine has more than 25 failures per year
     */
-    $workingHours = 700;
+    $machineHours = 700;
     $machineAge = 9;
     $machineFailures = 8;
 
-    if ($workingHours >= 1000 || $machineAge >= 7 || $machineFailures >= 25) {
+    if ($machineHours >= 1000 || $machineAge >= 7 || $machineFailures >= 25) {
         print ("<br> The machine needs to be replaced.");
     } else {
         print ("<br> The machine does not need to be replaced.");
+    };
+
+
+    // Exercise 5: Create a variable with a year. Create a program that shows if the year is a leap year or not. Hint: A leap year is divisible by 4.
+    $year = 2024;
+    
+    if ($year % 4 ==  0 || $year % 400 == 0) {
+        print ("<br> {$year} is a leap year.");
+    } else {
+        print ("<br> {$year} is not a leap year.");
+    };
+
+
+    // Exercise 6: Write a program that displays the mutiplication table of an integer. Create a variable of the beginning and ending of the loop.
+    $begin = 2;
+    $end = 10;
+
+    for ($i = $begin; $i <= $end; $i++) {
+        print ("<br> {$begin} x {$i} = " . $begin * $i);
+    };
+
+    
+    // Exercise 7: Write a program to get the Fibonacci series from 0 to 50. 
+    // Hint: The first two numbers in the series are 0 and 1. The next number is found by adding up the two numbers before it.
+    $a = 0;
+    $b = 1;
+
+    for ($i = 1; $i <= 9; $i++) {
+        print "<br> $a";
+        $temp = $a;
+        $a = $b;
+        $b = $temp + $b;
     }
+    
+
 
     ?>
     <!-- End PHP code  -->
