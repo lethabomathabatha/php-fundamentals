@@ -92,8 +92,23 @@
     }
     
 
+    // for each
+    /*
+    foreach ($array_expression as $key => $value) {
+        }
+    */
+    $names = array("John", "Jane", "Jack");
 
+    foreach ($names as $name) {
+        echo ("<br> Hello, {$name}!");
+    }
 
+    // using an associative array
+    $person = array("Name" => "John Doe", "Age" => 30, "City" => "Lisbon");
+
+    foreach ($person as $key => $value) {
+        echo ("<br> {$key}: {$value}");
+    }
 
     ?> 
     <!-- End PHP code -->
