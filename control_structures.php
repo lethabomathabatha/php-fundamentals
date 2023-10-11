@@ -54,7 +54,45 @@
     */
 
     // while
+    $a = 1;
+
+    while($a <= 10) {
+        echo ("<br>" . $a);
+        $a++;
+    }
+
+    // do while
+    $cookie = 1;
+
+    do {
+        echo ("<br> I like cookies");
+        $cookie++;
+    } while ($cookie <= 10);
+
+    // for
+    // for (initialization; condition; counter)
+    for ($x = 1; $x <= 10; $x++) {
+        echo ("<br> The number is: " . $x);
+    }
+
+    /*  Exercise:
+        - you have deposited $1000 into your bank account
+        - the interest rate is 5% per year
+        - you are withdrawing after 5 years
+        - calculate the end balance after each year and print it
+    */
+    $deposit = 1000;
+    $interest = 5/100;
+    $withdrawalYears = 5;
+
+    for ($years = 1; $years <= $withdrawalYears; $years++) {
+        $deposit += $deposit * $interest;
+
+        echo ("<br> The end balance after ". $years . " years is: " . $deposit);
+    }
     
+
+
 
 
     ?> 
