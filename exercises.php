@@ -140,8 +140,25 @@
         print "<br> F - Failed";
     } else {
         print "<br> The score does not appear to be valid.";
-    }
+    };
 
+
+    /*
+        Exercise 4:
+        A car manufacturer is replacing its machines. The machines will only be replaced if one (or more) of the following conditions is met:
+            - The machine has more than 10 000 working hours
+            - The machine is older than 7 years
+            - The machine has more than 25 failures per year
+    */
+    $workingHours = 700;
+    $machineAge = 9;
+    $machineFailures = 8;
+
+    if ($workingHours >= 1000 || $machineAge >= 7 || $machineFailures >= 25) {
+        print ("<br> The machine needs to be replaced.");
+    } else {
+        print ("<br> The machine does not need to be replaced.");
+    }
 
     ?>
     <!-- End PHP code  -->
